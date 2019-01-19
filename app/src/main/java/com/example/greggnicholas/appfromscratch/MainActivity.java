@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                         for (int i = 0; i < response.body().getAndroid().size(); i++) {
                             model_androids.add(response.body().getAndroid().get(i));
                         }
-                       Log.d("TAG", "size: " + model_androids.size() );
+                        Log.d("TAG", "size: " + model_androids.size());
 
                         recyclerView.setAdapter(adapter);
                         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));

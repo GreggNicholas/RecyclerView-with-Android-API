@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".DisplayActivity">
 
+    <TextView
+        android:id="@+id/textview_ver_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/textview_name_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textview_ver_display"/>
+    <TextView
+        android:id="@+id/textview_api_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textview_name_display"/>
+
 </android.support.constraint.ConstraintLayout>

@@ -16,7 +16,7 @@ public class AndroidAdapter extends RecyclerView.Adapter<ViewHolder_Android> {
     private List<Model_Android> androidList;
 
 
-    public AndroidAdapter( List<Model_Android> androidList) {
+    public AndroidAdapter(List<Model_Android> androidList) {
         this.androidList = androidList;
 
     }
@@ -34,6 +34,7 @@ public class AndroidAdapter extends RecyclerView.Adapter<ViewHolder_Android> {
     public void onBindViewHolder(@NonNull ViewHolder_Android viewHolder_android, int position) {
 
         viewHolder_android.onBind(androidList.get(position));
+
     }
 
 
